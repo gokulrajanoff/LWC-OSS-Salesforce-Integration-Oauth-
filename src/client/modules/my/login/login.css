@@ -105,7 +105,7 @@ select {
     color: white;
 }
 
-.info-alert{
+.info-alert {
     margin-top: 5px;
     padding: 20px;
     background-color: #318bb4;
@@ -136,4 +136,4 @@ select {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
+}

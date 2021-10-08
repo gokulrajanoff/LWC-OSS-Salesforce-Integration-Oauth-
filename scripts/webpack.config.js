@@ -4,7 +4,7 @@ const { GenerateSW } = require('workbox-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/client/index.js',
     output: {
         path: path.join(__dirname, '..', 'dist'),
         filename: '[name].js'

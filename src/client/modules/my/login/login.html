@@ -1,38 +1,44 @@
 <template>
     <div>
         <template if:true={loggedin}>
-            <div class="info-alert">
-                Logged in
-            </div>
+            <div class="info-alert">Logged in</div>
         </template>
     </div>
-    
+
     <template if:false={loggedin}>
         <div class="mainBar">
             <span class="barMenu">
-                <a href={Oauthurl}><button class="btn success">
+                <a href={Oauthurl}
+                    ><button class="btn success">
                         Login Salesforce with O-Auth
-                    </button></a>
+                    </button></a
+                >
             </span>
-            <span class="barMenu"><button class="btn info" onclick={handleClick}>
-                    Login Salesforce with Username & Password (hardcoded - [admin
-                    user])
+            <span class="barMenu"
+                ><button class="btn info" onclick={handleClick}>
+                    Login Salesforce with Username & Password (hardcoded -
+                    [admin user])
                 </button>
             </span>
         </div>
     </template>
 
     <div class="center">
-    <div class="form">
-        <label for="pubMessage">Message</label><br />
-        <input type="text" name="message" id="pubMessage" data-id="message" />
+        <div class="form">
+            <label for="pubMessage">Message</label><br />
+            <input
+                type="text"
+                name="message"
+                id="pubMessage"
+                data-id="message"
+            />
+        </div>
+        <div class="publish">
+            <button class="btn danger" onclick={publishMessage}>
+                Publish Message
+            </button>
+        </div>
     </div>
-    <div class="publish">
-        <button class="btn danger" onclick={publishMessage}>
-            Publish Message
-        </button>
-    </div>
-</div>
     <div class="alertArea">
         <template if:true={showSuccess}>
             <div class="success-alert">
