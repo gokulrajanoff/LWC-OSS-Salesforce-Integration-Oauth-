@@ -105,6 +105,13 @@ select {
     color: white;
 }
 
+.info-alert{
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #318bb4;
+    color: white;
+}
+
 .closebtn {
     margin-left: 15px;
     color: white;
@@ -123,3 +130,9 @@ select {
 .alertArea {
     margin-top: 2em;
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }

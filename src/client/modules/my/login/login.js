@@ -14,7 +14,7 @@ export default class Login extends LightningElement {
     showSuccess = false;
     showError = false;
     errorMessage;
-
+    loggedin = false;
     get Oauthurl() {
         let URL = `https://${this.myDomain}/services/oauth2/authorize?client_id=${this.CLIENT_ID}&redirect_uri=${this.redirectURI}&response_type=code`;
         console.log(URL);
@@ -41,6 +41,7 @@ export default class Login extends LightningElement {
             console.log(js);
             if (js.access_token) {
                 this.accessToken = js.access_token;
+                this.loggedin = true;
             }
         } catch (error) {
             console.log(error);
@@ -64,6 +65,7 @@ export default class Login extends LightningElement {
             if (js.access_token) {
                 this.accessToken = js.access_token;
                 this.refreshToken = js.refresh_token;
+                this.loggedin = true;
             }
         } catch (error) {
             console.log('error access toek oauth ', error);
