@@ -7,12 +7,9 @@ const path = require('path');
 const app = express();
 app.use(
     helmet.contentSecurityPolicy({
-      useDefaults: false,
+      useDefaults: true,
       directives: {
-        defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"],
-        scriptSrc: ["'self'"],
-        objectSrc: ["'none'"],
-        upgradeInsecureRequests: [],
+        defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"]
       },
     })
   );
