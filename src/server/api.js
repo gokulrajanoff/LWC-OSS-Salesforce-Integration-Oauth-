@@ -5,7 +5,17 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-app.use(helmet());
+app.use(
+    helmet.contentSecurityPolicy({
+      useDefaults: false,
+      directives: {
+        defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"],
+        scriptSrc: ["'self'", "cloudperitus17-dev-ed.my.salesforce.com"],
+        objectSrc: ["'none'"],
+        upgradeInsecureRequests: [],
+      },
+    })
+  );
 app.use(compression());
 
 const HOST = process.env.HOST || 'localhost';
