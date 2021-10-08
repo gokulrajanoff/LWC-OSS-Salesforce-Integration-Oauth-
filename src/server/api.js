@@ -9,7 +9,8 @@ app.use(
     helmet.contentSecurityPolicy({
       useDefaults: true,
       directives: {
-        defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"]
+        defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"],
+        scriptSrc: ["'self'", "unsafe-inline"],
       },
     })
   );
