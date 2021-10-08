@@ -41,7 +41,7 @@
     },
     "repository": "gokulrajanoff/test-app1",
     "scripts": {
-        "build": "lwc-services build -m production -w scripts/webpack.config.js",
+        "build": "lwc-services build -m production",
         "build:development": "lwc-services build -w scripts/webpack.config.js",
         "lint": "eslint ./src/**/*.js",
         "postinstall": "husky install",
@@ -49,6 +49,7 @@
         "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
         "start": "run-p start:client",
+        "serve": "node src/server/api.js",
         "start:api": "node src/server/api.js",
         "start:client": "node scripts/server.js",
         "test:unit": "lwc-services test:unit",
