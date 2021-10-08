@@ -10,7 +10,7 @@ app.use(
       useDefaults: false,
       directives: {
         defaultSrc: ["'self'","cloudperitus17-dev-ed.my.salesforce.com"],
-        scriptSrc: ["'self'", "cloudperitus17-dev-ed.my.salesforce.com"],
+        scriptSrc: ["'self'"],
         objectSrc: ["'none'"],
         upgradeInsecureRequests: [],
       },
