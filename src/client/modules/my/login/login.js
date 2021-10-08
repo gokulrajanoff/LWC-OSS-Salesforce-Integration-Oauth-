@@ -8,13 +8,21 @@ export default class Login extends LightningElement {
     myDomain = 'cloudperitus17-dev-ed.my.salesforce.com';
     userName = 'dev.team@cloudperitus.com.hitech';
     password = 'Test@123';
-    redirectURI = 'http://localhost:3001';
+
+    
     accessToken;
     refreshToken;
     showSuccess = false;
     showError = false;
     errorMessage;
     loggedin = false;
+
+
+    get redirectURI(){
+        const url = window.location.href+'';
+        return url.includes("localhost")?"http://localhost:3001":"https://stark-plateau-23372.herokuapp.com";
+    }
+    
     get Oauthurl() {
         let URL = `https://${this.myDomain}/services/oauth2/authorize?client_id=${this.CLIENT_ID}&redirect_uri=${this.redirectURI}&response_type=code`;
         console.log(URL);
