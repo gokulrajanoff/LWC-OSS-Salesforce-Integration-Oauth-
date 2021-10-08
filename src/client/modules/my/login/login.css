@@ -1,0 +1,125 @@
+.greet {
+    font-size: xx-large;
+}
+
+.fade-fast {
+    opacity: 0;
+    animation: fade-in 1s;
+}
+
+.fade-slow {
+    opacity: 0;
+    animation: fade-in 5s;
+}
+
+.fade-medium {
+    opacity: 0;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide {
+    opacity: 0;
+}
+
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {
+    background-color: #04aa6d;
+} /* Green */
+.success:hover {
+    background-color: #46a049;
+}
+
+.info {
+    background-color: #2196f3;
+} /* Blue */
+.info:hover {
+    background: #0b7dda;
+}
+
+.danger {
+    background-color: #f44336;
+} /* Red */
+.danger:hover {
+    background: #da190b;
+}
+
+.barMenu {
+    padding-left: 15em;
+    padding-right: 15em;
+}
+.mainBar {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+input[type='text'],
+select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.publish {
+    margin-top: 1em;
+}
+
+.error-alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+.success-alert {
+    padding: 20px;
+    background-color: #56b431;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.alertArea {
+    margin-top: 2em;
+}

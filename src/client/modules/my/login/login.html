@@ -1,0 +1,43 @@
+<template>
+    <div class="mainBar">
+        <span class="barMenu">
+            <a href={Oauthurl}
+                ><button class="btn success">
+                    Login Salesforce with O-Auth
+                </button></a
+            >
+        </span>
+        <span class="barMenu"
+            ><button class="btn info" onclick={handleClick}>
+                Login Salesforce with Username & Password (hardcoded - [admin
+                user])
+            </button>
+        </span>
+    </div>
+
+    <div class="form">
+        <label for="pubMessage">Message</label><br />
+        <input type="text" name="message" id="pubMessage" data-id="message" />
+    </div>
+    <div class="publish">
+        <button class="btn danger" onclick={publishMessage}>
+            Publish Message
+        </button>
+    </div>
+
+    <div class="alertArea">
+        <template if:true={showSuccess}>
+            <div class="success-alert">
+                <span class="closebtn" onclick={closeSuccess}>&times;</span>
+                <strong>Success!</strong> Message Published Successfully.
+            </div>
+        </template>
+        <template if:true={showError}>
+            <div class="error-alert">
+                <span class="closebtn" onclick={closeDanger}>&times;</span>
+                <strong>Error !</strong> Message Failed To publish
+                <p>{errorMessage}</p>
+            </div>
+        </template>
+    </div>
+</template>
