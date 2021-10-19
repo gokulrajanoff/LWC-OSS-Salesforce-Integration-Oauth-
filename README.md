@@ -1,4 +1,4 @@
-# test-app1
+# Salesforce=Heroku-integration-OAuth
 
 Here will be some information about the app.
 
