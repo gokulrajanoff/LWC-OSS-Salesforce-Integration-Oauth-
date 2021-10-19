@@ -1,4 +1,4 @@
-# Salesforce=Heroku-integration-OAuth
+# Salesforce-Heroku-integration-OAuth
 
 Here will be some information about the app.
 
