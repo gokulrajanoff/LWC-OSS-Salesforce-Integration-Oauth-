@@ -5,8 +5,8 @@ export default class Login extends LightningElement {
         '3MVG9p1Q1BCe9GmD19sHp0kH3cbKBbcwVVYWpV8BYTdxVVA2zOqAQeb03Ajy6_eGQiXW5mneoCnfX.6jeJx3.';
     CLIENT_Secret =
         '331C1E9AB0F93B2575A3767ED03DE2E801D648BDD93AEDECC03FFCA30890C35F';
-    myDomain = 'cloudperitus17-dev-ed.my.salesforce.com';
-    userName = 'dev.team@cloudperitus.com.hitech';
+    myDomain = 'org url';
+    userName = 'username';
     password = 'Test@123';
 
     
